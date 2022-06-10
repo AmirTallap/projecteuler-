@@ -6,11 +6,14 @@
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
 //The time complexity is o(n*n) :(
+// Optimized by starting from the absolute tops, and checking for palindromes,
+//This is the fastest way possible, as far as I know. 
+
 ini_set('display_errors', 1); 
 ini_set('display_startup_errors', 1); 
 error_reporting(E_ALL);
 function solution(){
-$current=0;
+
 for($i=999; $i>0; $i--){
     for($j=999; $j>0; $j--){
         $product=$i*$j;
