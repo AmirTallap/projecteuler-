@@ -1,2 +1,2 @@
 # projecteuler-
-Solving projecteuler problems
+Solving projecteuler problems in PHP.
