@@ -5,7 +5,8 @@
 
 // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
-// By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+// By considering the terms in the Fibonacci sequence whose 
+//values do not exceed four million, find the sum of the even-valued terms.
 
 ini_set('display_errors', 1); 
 ini_set('display_startup_errors', 1); 
