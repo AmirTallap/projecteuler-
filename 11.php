@@ -5,7 +5,6 @@
 // Largest product in a g
 // Submit
 
-//  Show HTML problem content 
 // Problem 11
 // In the 20×20 g below, four numbers along a diagonal line have been
 //  marked in red.
