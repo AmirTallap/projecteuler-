@@ -10,27 +10,25 @@
 ini_set('display_errors', 1); 
 ini_set('display_startup_errors', 1); 
 error_reporting(E_ALL);
-function solution(){
-
-    function isPrime($n) {
-        if ($n == 2) return true;
-        //Fastest way to determine if a number is prime.
-        for ($i = 2; $i * $i <= $n; $i++) {
-            if ($n % $i == 0) return false;
+function solution($T){
+    
+    function isPrime($n){
+        if($n==2) return true;
+        for($i=2; $i*$i<=$n; $i++){
+            if($n%$i==0) return false;
         }
         return true;
     }
-
-    $i = 1;
-    $c=1;
+    $c=3;
+    $count=2;
     while (true) {
-        $i += 2;
-        if(isPrime($i)) $c++;
-        if($c==10001) return $i;
-        
+        if($count==$T) return $c;
+        $c+=2;
+        if(isPrime($c)) $count++;
+
     }
 
 }
-echo solution();
+echo solution(10001);
 
 ?>
