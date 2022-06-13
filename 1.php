@@ -9,22 +9,16 @@
 ini_set('display_errors', 1); 
 ini_set('display_startup_errors', 1); 
 error_reporting(E_ALL);
-function solution(){
-    $arr=[];
-
-    for($i=0; $i<1000; $i+=3){
-        $arr[]=$i;
+//This can be optimized more....
+function solution($n){
+    $sum=0;
+    for($i=0; $i<$n; $i++){
+        if($i%3==0 || $i%5==0){
+            $sum+=$i;
+        }
     }
-    
-    for($i=0; $i<1000; $i+=5){
-        $arr[]=$i;
-    }
-
-    $arr=array_unique($arr);
-
-    echo array_sum($arr);
-
+    return $sum;
 }
-echo solution();
+echo solution(100000000);
 
 ?>
