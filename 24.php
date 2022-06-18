@@ -19,10 +19,6 @@ function solution(){
         $perm[$i] = $perm[$j];
         $perm[$j] = $k;
     }
-
-
-
-
     $count = 1;
     $numPerm = 1000000;
     while ($count < $numPerm) {
@@ -46,7 +42,6 @@ function solution(){
         }
         $count++;
     }
-        
     $permNum = "";
     for ($k = 0; $k < count($perm); $k++) {
         $permNum = $permNum . $perm[$k];
