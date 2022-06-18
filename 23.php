@@ -50,7 +50,7 @@ function solution($n){
         $sumValues=$v1+$v2;
         if($sumValues<=$n){
             $canBeWrittenAsAbundunt[$sumValues]=true;
-        } 
+        }
     }   
  }
  $t=0;
